@@ -1,0 +1,15 @@
+<div style="background-color: lightpink; width: 100%; height: 20%;">
+
+  <app-child [childName]="name" (age)="getAgeFromChild($event)" (phoneNumber)="getPhoneNumberFromChild($event)"></app-child>
+  </div>
+  <hr/>
+  
+  <b>App Component </b>
+  
+  <input type="text" #name2><br/>
+  <button (click)="doClick(name2.value)"> change Name</button> <br/>
+  Entered Name {{name}}
+
+  Age  {{outputAge}}
+
+  PhoneNumber {{phoneNumber}}
